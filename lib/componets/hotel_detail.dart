@@ -15,7 +15,7 @@ class HotelContainer extends StatelessWidget {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => HotelDetailsPage(name, location),
+            builder: (context) => HotelDetailsPage(name, location, imageurl),
           ),
         );
         // print("$name");
