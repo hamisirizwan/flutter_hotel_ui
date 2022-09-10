@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hotel_ui/pages/home_page.dart';
+import 'package:hotel_ui/pages/login_page.dart';
 
 class OnboardingScreen extends StatelessWidget {
   // const OnboardingScreen({ Key? key }) : super(key: key);
@@ -17,7 +18,7 @@ class OnboardingScreen extends StatelessWidget {
                   Navigator.pushAndRemoveUntil(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => HomePage(),
+                      builder: (context) => LoginPage(),
                     ),
                     (Route<dynamic> route) => false,
                   );

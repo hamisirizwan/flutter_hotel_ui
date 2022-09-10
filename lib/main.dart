@@ -14,6 +14,17 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.teal,
+        inputDecorationTheme: const InputDecorationTheme(
+          // filled: true,
+          // fillColor: Colors.grey,
+          border: OutlineInputBorder(
+            borderRadius: BorderRadius.all(
+              Radius.circular(30),
+            ),
+            borderSide: const BorderSide(color: Colors.white, width: 2.0),
+          ),
+          floatingLabelBehavior: FloatingLabelBehavior.always,
+        ),
       ),
       home: OnboardingScreen(),
     );
